@@ -1,0 +1,32 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{\textbf{Práctica 1 en \LaTeX}}
+\author{Franco Martín Rodríguez Iranzo}
+\date{October 2022}
+
+\begin{document}
+
+\maketitle
+
+
+\section{Actividad }
+    Find the power set $1R2$  of $R=\{(1,1),(1,2),(2,3),(3,4)\}$.
+        \subsection{Solución}
+        Una potencia de relación $R^3$ se puede descomponer de la siguiente manera $R^3= R \circ R \circ R$ por lo tanto averiguamos primero  $R \circ R$ para averiguar $R^2$ y luego haremos una composcion de nuevo para averiguar $R^3$.\\
+        Primer paso $R \circ R = \{(1,1),(1,2),(1,3),(2,4)\}$ \\
+        Para averiguar la primera composición debemos ir pasando por cada relación de elementos de nuestro conjunto r.\\
+        Es decir elegimos nuestra primera relacion que es $1R1$ y debemos averiguar cada relación que pertenezca a $R$ que empiece por nuestro elemento $'b'$ que en este caso es $'1'$ las relaciones que nos quedarian serian $1R1$ y $1R2$ y asi con todos, cuando llegamos al siguien que es $1R2$ averiguamos que las relaciones formadas con el primer elemento 'b' se utilizan para que '1' este relacionado con '3' y por lo tanto nos quedaria $1R3$ y el siguiente caso $2R3$ nos quedaria igual es una relación para unir el elemento '2' con el elemento '4' y por consecuente nos quedaria $2R4$\\
+        Ahora siguiendo la misma dinámica 
+        $R^2 \circ R =  \{(1,1),(1,2),(1,3),(1,4)\}$   
+
+
+
+
+\section{Actividad }
+     Buscar en los documentos .tex la expresión:\code{\textbackslash usepackage\{amsthm, amsmath\}}. 
+     \subsection{Solución}
+     Vamos a utilizar el comando grep que nos ayuda a encontrar con rapidez que documentos dentro de un directorio encontrar la expresion que estamos buscando.
+    Primero nos adentraremos en el directorio que queremos buscar en mi caso con \code {cd Descargas/files} nos adentramos en el directorio files que es donde queriamos buscar y luego 
+    utilizando \code {grep "usepackage\{amsthm, amsmath\}" *.tex} dentro de todos los documentos de latex para ello el *.tex averiguamos que esa epresion se encuentra en el documento mainP.tex
+\end{document}
